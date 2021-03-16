@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int i=0,n,digit,sum=0,rem;
+    scanf("%d",&n);
+  for(i=0;i<n;i++)
+    {   scanf("%d",&digit);
+        sum=0;
+        while(digit!=0)
+        {
+            rem=digit%10;
+            sum=sum+rem;
+            digit=digit/10;
+            
+        }
+    printf("%d\n",sum);
+  }
+	// your code goes here
+	return 0;
+}
+
